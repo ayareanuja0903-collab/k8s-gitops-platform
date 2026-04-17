@@ -11,7 +11,7 @@ This repository provisions a production-ready Kubernetes cluster on AWS using In
 |🔗 <a href="https://github.com/ayareanuja0903-collab/k8s-ansible-config" rel="noopener noreferrer" style="text-decoration:none; color:#0366d6; font-weight:500;">k8s-ansible-config </a> | Configuration Automation        | • Automates Kubernetes setup using Ansible <br> • Handles Docker/container runtime installation <br> • Initializes master node & joins worker nodes <br> • Ensures consistent environment setup across nodes |
 | 🔗 <a href="https://github.com/ayareanuja0903-collab/k8s-gitops-config" rel="noopener noreferrer" style="text-decoration:none; color:#0366d6; font-weight:500;">k8s-gitops-config</a>   | GitOps Deployment Layer         | • Stores Kubernetes manifests & Helm charts <br> • Managed by ArgoCD for continuous deployment <br> • Includes HPA, RBAC, Ingress, monitoring configs <br> • Enables **automated sync (Git → Cluster)**      |
 
-
+---
 
 ## 🛠️ Tech Stack
 
