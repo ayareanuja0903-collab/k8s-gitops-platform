@@ -1,0 +1,77 @@
+# =========================
+# Terraform
+# =========================
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform variable files (may contain secrets)
+*.tfvars
+*.tfvars.json
+
+# =========================
+# Ansible
+# =========================
+*.retry
+inventory.ini
+
+# =========================
+# SSH Keys / Secrets
+# =========================
+*.pem
+*.key
+*.p12
+*.pfx
+
+# =========================
+# AWS
+# =========================
+.aws/
+credentials
+config
+
+# =========================
+# Kubernetes
+# =========================
+.kube/
+*.kubeconfig
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Terraform lock (optional but recommended to keep)
+# .terraform.lock.hcl
+
+# OS / misc
+*.exe
+*.zip
+*.log
+
+.terraform/
+*.tfstate
+*.tfstate.*
