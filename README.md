@@ -4,6 +4,17 @@
 
 This repository provisions a production-ready Kubernetes cluster on AWS using Infrastructure as Code and automation tools.
 
+
+| 🚀 Repository           | 🎯 Purpose                      | 🧩 Key Responsibilities                                                                                                                                                                                      |
+| ----------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **K8s-GitOps-Platform** | Infrastructure & Platform Setup | • Provision Kubernetes cluster using Terraform <br> • Configure nodes using Ansible <br> • Setup ArgoCD, monitoring stack (Prometheus, Grafana, Alertmanager) <br> • Acts as the **foundation layer**        |
+| <a href="https://github.com/ayareanuja0903-collab/k8s-ansible-config" target="_blank">
+  k8s-ansible-config
+</a> | Configuration Automation        | • Automates Kubernetes setup using Ansible <br> • Handles Docker/container runtime installation <br> • Initializes master node & joins worker nodes <br> • Ensures consistent environment setup across nodes |
+| **k8s-gitops-config**   | GitOps Deployment Layer         | • Stores Kubernetes manifests & Helm charts <br> • Managed by ArgoCD for continuous deployment <br> • Includes HPA, RBAC, Ingress, monitoring configs <br> • Enables **automated sync (Git → Cluster)**      |
+
+
+
 ## 🛠️ Tech Stack
 
 * Terraform (EKS, VPC, EC2)
