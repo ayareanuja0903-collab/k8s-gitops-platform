@@ -24,7 +24,6 @@ This project demonstrates how modern DevOps practices—Infrastructure as Code (
 ## 📂 Structure
 
 * `terraform/` → Infrastructure provisioning
-* `ansible/` → Kubernetes node setup and configuration
 
 ## ⚙️ Workflow
 
