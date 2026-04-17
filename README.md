@@ -31,20 +31,17 @@ This project demonstrates how modern DevOps practices—Infrastructure as Code (
 2. Ansible configures worker nodes
 3. Kubernetes cluster becomes ready for deployments
 
-## ✅ Outcome
-
-* Fully automated Kubernetes cluster setup
-* Scalable and reproducible infrastructure
-* Ready for GitOps deployment via ArgoCD
-
 ## ⚠️ Challenges
 
 * IAM permission issues → Fixed with proper role policies
 * Node join failures → Resolved using kubeadm token fix
 * SSH connectivity → Fixed inventory and key permissions
 
-## 🚀 Future Improvements
+## ✅ Outcome
 
-* Add Cluster Autoscaler
-* Integrate CI/CD pipeline
-* Add security best practices (IRSA, RBAC)
+* Fully automated Kubernetes cluster setup
+* Scalable and reproducible infrastructure
+* Ready for GitOps deployment via ArgoCD
+
+---
+
