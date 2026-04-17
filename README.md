@@ -2,7 +2,9 @@
 
 ## 📌 Overview
 
-This repository provisions a production-ready Kubernetes cluster on AWS using Infrastructure as Code and automation tools.
+The Kubernetes GitOps Platform capstone project showcases the design and implementation of a production-grade DevOps ecosystem that automates infrastructure provisioning, cluster configuration, application deployment, and monitoring using industry-standard tools.
+
+This project demonstrates how modern DevOps practices—Infrastructure as Code (IaC), Configuration Management, and GitOps—can be combined to build a scalable, reliable, and fully automated cloud-native platform.
 
 
 | 🚀 Repository           | 🎯 Purpose                      | 🧩 Key Responsibilities                                                                                                                                                                                      |
