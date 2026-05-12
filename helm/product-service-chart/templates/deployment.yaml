@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: product-service
+spec:
+  replicas: {{ .Values.replicaCount }}
+
+  selector:
+    matchLabels:
+      app: product-service
+
+  template:
+    metadata:
+      labels:
+        app: product-service
+
+    spec:
+      containers:
+      - name: product-service
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+
+        ports:
+        - containerPort: {{ .Values.containerPort }}
+
+        envFrom:
+        - configMapRef:
+            name: product-service-config
+
+        - secretRef:
+            name: product-service-secret
+
+        resources:
+          {{- toYaml .Values.resources | nindent 10 }}

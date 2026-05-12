@@ -75,3 +75,4 @@ crash.log
 .terraform/
 *.tfstate
 *.tfstate.*
+*deleted:

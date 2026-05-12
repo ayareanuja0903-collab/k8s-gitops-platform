@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: order-service
+  namespace: argocd
+
+spec:
+  project: devops-project
+
+  source:
+    repoURL: https://github.com/your-org/k8s-gitops-config
+    targetRevision: HEAD
+    path: staging/order-service
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: staging
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

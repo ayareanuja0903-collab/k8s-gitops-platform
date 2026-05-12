@@ -1,41 +1,39 @@
-variable "region" {
-  description = "AWS region"
+variable "aws_region" {
+  description = "AWS Region"
   type        = string
-  default     = "ap-south-1"
 }
 
 variable "cluster_name" {
-  type    = string
-  default = "gitops-cluster"
+  description = "EKS Cluster Name"
+  type        = string
 }
 
 variable "cluster_version" {
-  type    = string
-  default = "1.29"
+  description = "EKS Cluster Version"
+  type        = string
 }
 
-variable "instance_type" {
-  type    = string
-  default = "t3.medium"
+variable "vpc_name" {
+  description = "VPC Name"
+  type        = string
 }
 
-variable "min_capacity" {
-  type    = number
-  default = 2
+variable "vpc_cidr" {
+  description = "VPC CIDR"
+  type        = string
 }
 
-variable "max_capacity" {
-  type    = number
-  default = 5
+variable "private_subnets" {
+  description = "Private Subnets"
+  type        = list(string)
 }
 
-variable "desired_capacity" {
-  type    = number
-  default = 3
+variable "public_subnets" {
+  description = "Public Subnets"
+  type        = list(string)
 }
 
-variable "key_name" {}
-
-variable "vpc_id" {}
-
-variable "public_subnet_id" {}
+variable "instance_types" {
+  description = "Worker Node Instance Types"
+  type        = list(string)
+}
